@@ -1,0 +1,21 @@
+/** Components **/
+@import "components/image.css";
+
+ol {
+  counter-reset: item;
+}
+li {
+  display: block;
+  margin-left: 1.7em;
+}
+li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  position: absolute;
+  margin-left: -1.7em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
